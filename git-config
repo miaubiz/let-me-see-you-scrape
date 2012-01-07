@@ -1,0 +1,86 @@
+
+--- this is is how git-svn remote branches are handled ---
+
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git://git.webkit.org/WebKit.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[svn-remote "svn"]
+	url = http://svn.webkit.org/repository/webkit
+	fetch = trunk:refs/remotes/origin/master
+[svn-remote "svn517"]
+	url = http://svn.webkit.org/repository/webkit
+	fetch = branches/chromium/517:refs/remotes/origin/517
+[svn-remote "svn552"]
+	url = http://svn.webkit.org/repository/webkit
+	fetch = branches/chromium/552:refs/remotes/origin/552
+[svn-remote "svn597"]
+    url = http://svn.webkit.org/repository/webkit
+    fetch = branches/chromium/597:refs/remotes/origin/597
+[svn-remote "svn648"]
+    url = http://svn.webkit.org/repository/webkit
+    fetch = branches/chromium/648:refs/remotes/origin/648
+[svn-remote "svn696"]
+    url = http://svn.webkit.org/repository/webkit
+    fetch = branches/chromium/696:refs/remotes/origin/696
+[svn-remote "svn742"]
+	url = http://svn.webkit.org/repository/webkit
+	fetch = branches/chromium/742:refs/remotes/origin/742
+[svn-remote "svn782"]
+	url = http://svn.webkit.org/repository/webkit
+	fetch = branches/chromium/782:refs/remotes/origin/782
+[svn-remote "svn874"]
+	url = http://svn.webkit.org/repository/webkit
+	fetch = branches/chromium/874:refs/remotes/origin/874
+[svn-remote "svn835"]
+	url = http://svn.webkit.org/repository/webkit
+	fetch = branches/chromium/835:refs/remotes/origin/835
+[svn-remote "svn912"]
+	url = http://svn.webkit.org/repository/webkit
+	fetch = branches/chromium/912:refs/remotes/origin/912
+[svn-remote "svn963"]
+	url = http://svn.webkit.org/repository/webkit
+	fetch = branches/chromium/963:refs/remotes/origin/963
+[pack]
+	compression = 9
+[branch "874"]
+	remote = origin
+	merge = refs/heads/874
+[branch "835"]
+	remote = origin
+	merge = refs/heads/835
+[branch "517"]
+	remote = origin
+	merge = refs/heads/517
+[branch "552"]
+	remote = origin
+	merge = refs/heads/552
+[branch "597"]
+	remote = origin
+	merge = refs/heads/597
+[branch "648"]
+	remote = origin
+	merge = refs/heads/648
+[branch "696"]
+	remote = origin
+	merge = refs/heads/696
+[branch "742"]
+	remote = origin
+	merge = refs/heads/742
+[branch "782"]
+	remote = origin
+	merge = refs/heads/782
+[branch "912"]
+	remote = origin
+	merge = refs/heads/912
+[branch "963"]
+	remote = origin
+	merge = refs/heads/963
